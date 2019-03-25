@@ -1,0 +1,22 @@
+#mybody{
+    background-color: lightgray;
+}
+
+.jumbotron {
+	background-color: whitesmoke;
+	
+}
+
+.mid-section{
+    background-color: gray;
+    height: 33.33vh;
+    margin: 0;
+}
+
+.bottom-section{
+    
+        background-color: whitesmoke;
+        height: 33.33vh;
+        margin: 0;
+    
+}
