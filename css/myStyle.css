@@ -4,18 +4,21 @@
 
 .jumbotron {
     background-color: whitesmoke;
+    
     padding-top: 0px;
 	
 }
 .jumbotron h1{
     font-family: 'Courgette', cursive;
     font-size: 4.2rem;
+    color: #3F3A31;
     padding-top: 20px;
 }
 
 .jumbotron h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
+    
     padding-top: 40px;
     padding-right: 20px;
 }
@@ -23,6 +26,7 @@
 .jumbotron h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    color: #3F3A31;
     padding-top: 80px;
     padding-right: 20px;
 }
@@ -31,12 +35,22 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     padding-right: 20px;
+   
 }
 
 .mid-section{
-    background-color: gray;
-    height: 33.33vh;
+    background-color: #1C1917;
+    color: #393636;
+    /*height: 33.33vh;*/
     margin: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.mid-section p{
+     padding: 1rem;
 }
 
 .bottom-section{
@@ -50,5 +64,16 @@
 .imgSection1{
     width: 80%;
     opacity: 0.7;
-
+    -webkit-filter: contrast(2);
+  filter: contrast(2);
 }
+
+.food-icon-fa{
+    font-size: 3.5rem;
+    color: #3F3A31;
+    padding-bottom: 2rem;
+    padding-left:2rem;
+    padding-right: 2rem;
+    padding-top: 6rem;
+}
+
