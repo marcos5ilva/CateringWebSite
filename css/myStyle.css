@@ -1,5 +1,5 @@
 #mybody{
-    background-color: lightgray;
+    background-color: #E8E3E0;
 }
 
 .jumbotron {
@@ -42,7 +42,10 @@
     background-color: #1C1917;
     color: #393636;
     /*height: 33.33vh;*/
+    right:0;
     margin: 0;
+    margin-left:-5rem;
+    margin-right:-5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 3rem;
@@ -55,10 +58,18 @@
 
 .bottom-section{
     
-        background-color: whitesmoke;
-        height: 33.33vh;
-        margin: 0;
+       background-color:#D2CBC2;
+        /*height: 33.33vh;*/
+        margin-bottom: 3rem;
     
+}
+
+.botton-section-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+   
+    color: #3F3A31;
+    padding-top: 3rem;
 }
 
 .imgSection1{
@@ -75,5 +86,14 @@
     padding-left:2rem;
     padding-right: 2rem;
     padding-top: 6rem;
+}
+
+.social-icon-fa{
+    font-size: 3.5rem;
+    color: #3F3A31;
+    padding-bottom: 6rem;
+    padding-left:2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
 }
 
