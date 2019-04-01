@@ -40,7 +40,7 @@
 
 .mid-section{
     background-color: #1C1917;
-    color: #393636;
+    color: #82a695;
     /*height: 33.33vh;*/
     right:0;
     margin: 0;
@@ -67,9 +67,18 @@
 .botton-section-title{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    font-weight: bold;
    
     color: #3F3A31;
     padding-top: 3rem;
+}
+
+.bottom-section-text p{
+    font-family: 'Courgette', cursive;
+    font-size: 1.3rem;
+    color: #3F3A31;
+    padding-bottom: 6rem;
+
 }
 
 .imgSection1{
@@ -81,7 +90,7 @@
 
 .food-icon-fa{
     font-size: 3.5rem;
-    color: #3F3A31;
+    color: ##82a695;
     padding-bottom: 2rem;
     padding-left:2rem;
     padding-right: 2rem;
@@ -91,7 +100,7 @@
 .social-icon-fa{
     font-size: 3.5rem;
     color: #3F3A31;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
     padding-left:2rem;
     padding-right: 2rem;
     padding-top: 3rem;
