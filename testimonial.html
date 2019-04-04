@@ -14,9 +14,56 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Testimonials</title>
+
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 5px 5px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+
+        input {
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+
 </head>
 
 <body id="mybody">
+    <script>
+        //not working 
+        function validateForm() {
+            var x = document.forms["myForm"]["comments"].value;
+            //        var y = document.forms["myForm"]["name"].value;
+            //        var z = document.forms["myForm"]["email"].value;
+            if (x == "") {
+                alert("You need to add some comments");
+                return false;
+            }
+        }
+
+        function showInput() {
+            document.getElementById('display').innerHTML =
+                document.getElementById("n").value;
+            document.getElementById('display2').innerHTML =
+                document.getElementById("e").value;
+            document.getElementById('display3').innerHTML =
+                document.getElementById("comments").value;
+            return false;
+        }
+    </script>
+
     <div class="container">
         <!--Navbar-->
         <nav class="navbar navbar-expand-sm bg-light justify-content-center">
@@ -55,11 +102,23 @@
                     <img class="imgSection1 img-fluid" src="images/halfChocolateCake.png">
                 </div>
                 <div class="col-lg-6 text-left">
-                    <h1>Catering</h1>
-                    <h2>From weddings to corporate events big & small, Catering's will take your event to the next
-                        level!</h2>
-                    <h3>Strawberry Chocolate Cake</h3>
-                    <p>Our new strawberry Chocolate Cake is a rich and moist desert</p>
+                    <label>Comments </label>
+                    <p><span id='display'></span></p>
+                    <p><span id='display2'></span></p>
+                    <p><span id='display3'></span></p>
+                    <!--Values: name, email, comments-->
+                    <form name="myForm" onsubmit="return validateForm()">
+                        <div>
+                            Name:<br>
+                            <input type="text" name="name" id="n"><br>
+                            E-mail:<br>
+                            <input type="text" name="email" id="e"><br>
+                            Comments:
+                            <textarea name="comments" id="comments"
+                                style="font-family:sans-serif;font-size:1.2em;">Tell us something...</textarea>
+                        </div>
+                        <input type="submit" value="Submit" onclick="return showInput();">
+                    </form>
                 </div>
             </div>
         </div>
