@@ -3,6 +3,23 @@
     overflow-x: hidden;
 }
 
+#comment{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#formThing{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
 .jumbotron {
     background-color: whitesmoke;
     
@@ -91,7 +108,7 @@
 
 .food-icon-fa{
     font-size: 3.5rem;
-    color: ##82a695;
+    color: #82a695;
     padding-bottom: 2rem;
     padding-left:2rem;
     padding-right: 2rem;
