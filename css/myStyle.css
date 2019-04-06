@@ -136,7 +136,13 @@
     padding-bottom: 2rem;
 }
 
-.footer-section p{
-  
+.img-gallery{
+    padding: 2rem;
+     
 }
+
+.img-gallery .img-thumbnail{
+    max-width: 20rem;
+}
+
 
