@@ -64,8 +64,8 @@
     margin: 0;
     margin-left:-15rem;
     margin-right:-15rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     padding-top: 3rem;
     padding-bottom: 6rem;
 }
@@ -90,13 +90,15 @@
     color: #3F3A31;
     padding-top: 3rem;
 }
-
+.bottom-section-text{
+    padding-bottom: 6rem;
+    padding-bottom: 6rem;
+}
 .bottom-section-text p{
     font-family: 'Courgette', cursive;
     font-size: 1.3rem;
     color: #3F3A31;
-    padding-bottom: 6rem;
-
+    
 }
 
 .imgSection1{
