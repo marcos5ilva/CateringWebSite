@@ -145,6 +145,7 @@
 
 .img-gallery .img-thumbnail{
     max-width: 20rem;
+    max-height: 20rem;
 }
 
 .btn-recipe{
