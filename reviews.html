@@ -13,7 +13,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>Testimonials</title>
+    <title>Reviews</title>
 
 
     <style>
@@ -53,13 +53,45 @@
             }
         }
 
+        let personArray = [];
+        let emailArray = [];
+        let commentsArray = [];
+
         function showInput() {
-            document.getElementById('display').innerHTML =
-                document.getElementById("n").value;
-            document.getElementById('display2').innerHTML =
-                document.getElementById("e").value;
-            document.getElementById('display3').innerHTML =
-                document.getElementById("comments").value;
+            //add to array
+            personArray.push(document.getElementById("n").value);
+            emailArray.push(document.getElementById("e").value)
+            commentsArray.push(document.getElementById("comments").value);
+            console.log(personArray);
+            var element = document.getElementById("display");
+            //create children to display div
+            var i = personArray.length - 1;
+            //  const element = array[i];
+
+            var para1 = document.createElement("p");
+            var node1 = document.createTextNode(personArray[i]);
+            para1.appendChild(node1);
+
+            element.appendChild(para1);
+
+            var para2 = document.createElement("p");
+            var node2 = document.createTextNode(emailArray[i]);
+            para2.appendChild(node2);
+            // var element = document.getElementById("display");
+            element.appendChild(para2);
+
+            var para3 = document.createElement("p");
+            var node3 = document.createTextNode(commentsArray[i]);
+            para3.appendChild(node3);
+            //   var element = document.getElementById("display");
+            element.appendChild(para3);
+
+            //    document.getElementById('display').innerHTML =
+            //      personArray[0];
+            // document.getElementById('display2').innerHTML =
+            //     emailArray[0];
+            // document.getElementById('display3').innerHTML =
+            //     commentsArray[0];
             return false;
         }
     </script>
@@ -125,11 +157,14 @@
                         egestas. Eget nullam non nisi est. </p>
                 </div>
                 <div class="col-lg-12 text-left" id="formThing">
+                    <div id="display">
+                        <p><span id='display'></span></p>
+                        <p><span id='display2'></span></p>
+                        <p><span id='display3'></span></p>
+
+                    </div>
                     <h2>Leave a review</h2>
                     <label> </label>
-                    <p><span id='display'></span></p>
-                    <p><span id='display2'></span></p>
-                    <p><span id='display3'></span></p>
                     <!--Values: name, email, comments-->
                     <form name="myForm" onsubmit="return validateForm()">
                         <div>
@@ -176,15 +211,15 @@
         </div>
         <!-- End of Bottom section-->
         <!-- Beginning of footer-section section-->
-    <div class="footer-section">
-        <div class="row text-center">
-          <div class="col-lg-12 ">
-            <p>Copyright © 2019 Catering . All right reserved</p>
-            <p>Designed by Eddie  • Laura • Marcos</p>
-          </div>
+        <div class="footer-section">
+            <div class="row text-center">
+                <div class="col-lg-12 ">
+                    <p>Copyright © 2019 Catering . All right reserved</p>
+                    <p>Designed by Eddie • Laura • Marcos</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- End of footerSection section-->
+        <!-- End of footerSection section-->
     </div>
     <!--End of container-->
 
