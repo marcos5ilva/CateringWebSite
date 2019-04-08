@@ -42,12 +42,12 @@
 
 <body id="mybody">
     <script>
-        //not working 
+
         function validateForm() {
             var x = document.forms["myForm"]["comments"].value;
-            //        var y = document.forms["myForm"]["name"].value;
-            //        var z = document.forms["myForm"]["email"].value;
-            if (x == "") {
+            var y = document.forms["myForm"]["name"].value;
+            var z = document.forms["myForm"]["email"].value;
+            if (x == "" || y == "" || z == "") {
                 alert("You need to add some comments");
                 return false;
             }
@@ -64,9 +64,7 @@
             commentsArray.push(document.getElementById("comments").value);
             console.log(personArray);
             var element = document.getElementById("display");
-            //create children to display div
             var i = personArray.length - 1;
-            //  const element = array[i];
 
             var para1 = document.createElement("p");
             var node1 = document.createTextNode(personArray[i]);
@@ -77,21 +75,12 @@
             var para2 = document.createElement("p");
             var node2 = document.createTextNode(emailArray[i]);
             para2.appendChild(node2);
-            // var element = document.getElementById("display");
             element.appendChild(para2);
 
             var para3 = document.createElement("p");
             var node3 = document.createTextNode(commentsArray[i]);
             para3.appendChild(node3);
-            //   var element = document.getElementById("display");
             element.appendChild(para3);
-
-            //    document.getElementById('display').innerHTML =
-            //      personArray[0];
-            // document.getElementById('display2').innerHTML =
-            //     emailArray[0];
-            // document.getElementById('display3').innerHTML =
-            //     commentsArray[0];
             return false;
         }
     </script>
@@ -126,6 +115,8 @@
         </nav>
         <!--End of Navbar-->
 
+        <!-- Laura -->
+
         <!-- Jumbotron-->
         <div class="jumbotron jumbotron-fluid" id="my-jumbotron"
             style="margin: 0px; padding-top: 0px;padding-bottom: 0px;">
@@ -135,26 +126,34 @@
                 </div>
                 <div class="col-lg-12" id="comment">
                     <p>Laura</p>
-                    <p>laura.nik@gmail.com</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna
-                        aliqua. Adipiscing at in tellus integer feugiat scelerisque. Ante in nibh mauris cursus mattis
-                        molestie a iaculis.
-                        Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Senectus et netus et
-                        malesuada fames ac turpis
-                        egestas. Velit aliquet sagittis id consectetur. </p>
+                    <p>laura@gmail.com</p>
+                    <p>Paolo catered my wedding reception. People said it was the best they had in their lives!
+                        I asked him to prepare something vegetarian for a few of my friends as well and I tested (I'm
+                        not vegetarian) and it was delicious!
+                        I will ask him to do my granny's 70's birthday party as well. We are looking forward to it! </p>
                 </div>
 
                 <div class="col-lg-12" id="comment">
-                    <p>Laura</p>
-                    <p>laura.nik@gmail.com</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna
-                        aliqua. Adipiscing at in tellus integer feugiat scelerisque. Ante in nibh mauris cursus mattis
-                        molestie a iaculis.
-                        Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Senectus et netus et
-                        malesuada fames ac turpis
-                        egestas. Eget nullam non nisi est. </p>
+                    <p>Marcos</p>
+                    <p>marcos@gmail.com</p>
+                    <p> I met Paolo by a friend who recommended him. He was very helpful to decide the kind of menu,
+                        especially because many old people would be attending and many of them had dietary restrictions.
+                        We chose a menu that could be easily adapted to them and they were all deligted. I expect to
+                        have him help me with other events in the near future. </p>
+
+                </div>
+
+                <div class="col-lg-12" id="comment">
+                    <p>Eddy</p>
+                    <p>eddy@gmail.com</p>
+                    <p> I found Catering doing a Google search. I was desperate: the person who was going to do it
+                        changed her mind at the last minute and I had to find someone who could help me in a very short
+                        notice.
+                        I told him the details and he was very willing to help me. We decided on the menu in a flash and
+                        he started preparing all of it.
+                        I can assure you it was excellent, even considering the short notice. I appreciate the effort
+                        and professionalism he put in it. I would recommend him to anyone! </p>
+
                 </div>
                 <div class="col-lg-12 text-left" id="formThing">
                     <div id="display">
