@@ -19,33 +19,37 @@
 
 <body id="mybody">
   <div class="container">
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-
-      </ul>
-      <!-- Brand/logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="images/pastaRoller.svg" alt="Logo" style="width:200px;">
+     <!--Navbar-->  
+     <nav class="navbar  navbar-expand-sm  fixed-top navbar-light bg-light ">
+      <a class="  navbar-brand imgBrand" href="index.html">
+          <img src="images/pastaRoller.svg" alt="Logo" style="width:150px;">
       </a>
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="reviews.html">Reviews</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About us</a>
-        </li>
-      </ul>
-    </nav>
-    <!--End of Navbar-->
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+<!--End of Navbar-->
 
     <!-- Jumbotron-->
     <div class="jumbotron jumbotron-fluid" id="my-jumbotron" style="margin: 0px; padding-top: 0px;padding-bottom: 0px;">
