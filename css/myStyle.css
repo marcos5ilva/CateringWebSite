@@ -1,7 +1,14 @@
 #mybody{
     background-color: #E8E3E0;
     overflow-x: hidden;
+    margin-top: 60px;
 }
+.imgBrand {
+    top: 0;
+    left: 50%;
+    margin-left: -70px;
+    position: absolute;
+  }
 
 #comment{
     padding-top: 2%;
